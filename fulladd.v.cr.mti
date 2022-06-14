@@ -1,0 +1,15 @@
+C:/Users/wjstm/modelsim_ase/file/tb_fulladd.v {1 {vlog -work work -stats=none C:/Users/wjstm/modelsim_ase/file/tb_fulladd.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tb_fulladd
+
+Top level modules:
+	tb_fulladd
+
+} {} {}} C:/Users/wjstm/modelsim_ase/file/halfadd1.v {1 {vlog -work work -stats=none C:/Users/wjstm/modelsim_ase/file/halfadd1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module halfadd1
+
+Top level modules:
+	halfadd1
+
+} {} {}}

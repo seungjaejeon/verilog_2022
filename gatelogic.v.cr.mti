@@ -1,0 +1,15 @@
+C:/Users/wjstm/modelsim_ase/file/gatelogic.v {1 {vlog -work work -stats=none C:/Users/wjstm/modelsim_ase/file/gatelogic.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module gatelogic
+
+Top level modules:
+	gatelogic
+
+} {} {}} C:/Users/wjstm/modelsim_ase/file/tb_gatelogic.v {1 {vlog -work work -stats=none C:/Users/wjstm/modelsim_ase/file/tb_gatelogic.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tb_gatelogic
+
+Top level modules:
+	tb_gatelogic
+
+} {} {}}

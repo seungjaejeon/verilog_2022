@@ -1,0 +1,12 @@
+`timescale 1ns/100ps
+module tb_evenparity();
+reg [7:0] a;
+wire[8:0] z;
+evenparity test(a,z);
+initial
+begin
+	a=8'b00010001;
+#1600 	a=8'b01101100;
+#1600 	a=8'b01010111;
+end
+endmodule

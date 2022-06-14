@@ -1,0 +1,13 @@
+module gatelogic(a,b,s,z);
+input a;
+input b;
+input s;
+output z;
+  
+wire n1, n2, n3;
+not (n1, s);
+and (n2, a, s);
+and (n3, n1, b);
+or (z, n2, n3);
+  
+endmodule

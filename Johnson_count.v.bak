@@ -1,0 +1,15 @@
+module Johnson_count(clk,reset_n,q);
+input clk,reset_n;
+output [4:0] q;
+integer temp;
+reg[4:0] q;
+always@(reset_n)
+if (reset_n==0) q=0;
+always@(posedge clk)
+if (reset_n==1)
+begin
+temp=q[4];
+q=q<<1;
+q[0]=!temp;
+end
+endmodule

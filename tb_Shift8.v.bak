@@ -1,0 +1,23 @@
+`timescale 1ns/100ps
+module tb_Shift8();
+reg clk,reset_n,en,dir,ld,sd;
+reg [7:0] d;
+wire [7:0] q;
+Shift8 test(clk,reset_n,en,dir,ld,sd,d,q);
+initial
+begin
+clk=0;	reset_n=1;	dir=0;	ld=0;	d=8'b00001111; en=0; sd=0;
+#10 reset_n=0;//10~20
+#10 reset_n=1; ld=1;//20~30
+#10 ld=0; sd=1; en=1;//30~40
+#10 sd=0;//40~60
+#20 dir=1; sd=1;//60~70
+#10 sd=0;
+#10 en=0;
+#10 dir=0;
+end
+always
+begin
+#5 clk=!clk;
+end
+endmodule

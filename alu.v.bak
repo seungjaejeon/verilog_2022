@@ -1,0 +1,20 @@
+module alu(a,b,s,z);
+input[7:0] a,b;
+input[2:0] s;
+output[7:0] z;
+reg[7:0] z;
+wire[2:0] s;
+
+always@(a,b,s)
+begin
+if(s==3'b000) z=8'b00000000;
+else if(s==3'b001)z=b-a;
+else if(s==3'b010)z=a-b;
+else if(s==3'b011)z=a+b;
+else if(s==3'b100)z=a^b;
+else if(s==3'b101)z=a|b;
+else if(s==3'b110)z[7:0]=a[7:0]&b[7:0];
+else if(s==3'b111)z=8'b11111111;
+
+end
+endmodule

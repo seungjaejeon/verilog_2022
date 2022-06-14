@@ -1,0 +1,14 @@
+`timescale 1ns/100ps
+module tb_Johnson_count();
+reg clk,reset_n;
+wire [4:0]q;
+Johnson_count test(clk,reset_n,q);
+initial
+begin
+clk=0; reset_n=1;
+#10 reset_n=0;
+#10 reset_n=1;
+end
+always
+#5 clk=!clk;
+endmodule

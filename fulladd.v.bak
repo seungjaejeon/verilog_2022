@@ -1,0 +1,13 @@
+module fulladd(x,y,z,sum,cout);
+input x,y,z;
+output sum,cout;
+wire sum,cout;
+wire n1,n2,n3;
+
+always@(x,y,z);
+begin
+halfadd1 u0(x,y,n2,n1);
+halfadd1 u1(n2,z,sum,n3);
+or (cout,n1,n3);
+end
+endmodule

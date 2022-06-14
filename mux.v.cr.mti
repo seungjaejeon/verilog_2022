@@ -1,0 +1,15 @@
+C:/Users/wjstm/modelsim_ase/file/tb_mux.v {1 {vlog -work work -stats=none C:/Users/wjstm/modelsim_ase/file/tb_mux.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tb_mux
+
+Top level modules:
+	tb_mux
+
+} {} {}} C:/Users/wjstm/modelsim_ase/file/mux.v {1 {vlog -work work -stats=none C:/Users/wjstm/modelsim_ase/file/mux.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mux
+
+Top level modules:
+	mux
+
+} {} {}}
