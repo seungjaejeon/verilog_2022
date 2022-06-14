@@ -11,5 +11,6 @@ begin
 if(!reset_n) q=0;//reset_n=0->q=0
 else if(en==0) q=q;
 else q=d;//q=d
+
 end
 endmodule
