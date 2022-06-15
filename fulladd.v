@@ -2,7 +2,7 @@ module fulladd(x,y,z,sum,cout);//fulladd module
 input x,y,z;//1bit x,y,z in
 output sum,cout;//1bit sum, cout out
 wire sum,cout;//wire sum,cout
-wire n1,n2,n3;//????
+wire n1,n2,n3;//wire
 
 always@(x,y,z);//when x,y,z in
 begin
